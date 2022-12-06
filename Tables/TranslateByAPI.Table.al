@@ -4,42 +4,27 @@ table 50136 TranslateByAPITable
 
     fields
     {
-        field(1; English; Text[50])
+        field(1; English; Text[500])
         {
             DataClassification = ToBeClassified;
 
         }
-        field(2; Russian; Text[50])
+        field(2; Russian; Text[500])
         {
             DataClassification = ToBeClassified;
             Editable = false;
         }
-        field(3; Chinese; Text[50])
+        field(3; Punjabi; Text[500])
         {
             DataClassification = ToBeClassified;
             Editable = false;
         }
-        field(4; Dutch; Text[50])
+        field(4; Tamil; Text[500])
         {
             DataClassification = ToBeClassified;
             Editable = false;
         }
-        field(5; German; Text[50])
-        {
-            DataClassification = ToBeClassified;
-            Editable = false;
-        }
-        field(6; Punjabi; Text[50])
-        {
-            DataClassification = ToBeClassified;
-            Editable = false;
-        }
-        field(7; Tamil; Text[50])
-        {
-            DataClassification = ToBeClassified;
-            Editable = false;
-        }
-        field(8; Telugu; Text[50])
+        field(5; Telugu; Text[500])
         {
             DataClassification = ToBeClassified;
             Editable = false;
@@ -53,4 +38,7 @@ table 50136 TranslateByAPITable
             Clustered = true;
         }
     }
+
+
+
 }

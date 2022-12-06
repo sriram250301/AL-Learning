@@ -16,5 +16,4 @@ pageextension 50119 ItemLedgerEntriesExtension extends "Item Ledger Entries"
             }
         }
     }
-    
 }

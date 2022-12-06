@@ -14,4 +14,13 @@ codeunit 50120 MySubscriptionEvent
         ItemLedgerEntry.TaxPercentage := ItemJnlLine.TaxPercentage;
     end;
 
+    [EventSubscriber(ObjectType::Table, Database::TranslateByAPITable, 'OnAfterInsertEvent', '', false, false)]
+    local procedure MyProcedure9(var Rec: Record TranslateByAPITable)
+    var
+        TranslateByAPICodeUnit: Codeunit TranslationByAPI;
+    begin
+        // Message(Format(Rec.English));
+        TranslateByAPICodeUnit.GetTranslationsByAPI(Rec);
+    end;
+
 }

@@ -254,7 +254,6 @@ page 50101 MyTestPage
                     trigger OnAction()
                     var
                         TranslationsPage: Page TranslateByAPIPage;
-                        
                     begin
                         TranslationsPage.Run();
                     end;

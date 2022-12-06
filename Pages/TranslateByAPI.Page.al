@@ -12,49 +12,27 @@ page 50137 TranslateByAPIPage
         {
             repeater(General)
             {
-                field(English; English)
-                {
-                    ApplicationArea = All;
-                    trigger OnValidate()
-                    var
-                        TranslateByAPICodeUnit: Codeunit TranslationByAPI;
-                    begin
-                        TranslateByAPICodeUnit.GetTranslationsByAPI(English);
-                    end;
-
-                }
-
-                field(Russian; Russian)
+                field(English; Rec.English)
                 {
                     ApplicationArea = All;
 
                 }
-                field(Chinese; Chinese)
+                field(Russian; Rec.Russian)
                 {
                     ApplicationArea = All;
 
                 }
-                field(Dutch; Dutch)
+                field(Punjabi; Rec.Punjabi)
                 {
                     ApplicationArea = All;
 
                 }
-                field(German; German)
+                field(Tamil; Rec.Tamil)
                 {
                     ApplicationArea = All;
 
                 }
-                field(Punjabi; Punjabi)
-                {
-                    ApplicationArea = All;
-
-                }
-                field(Tamil; Tamil)
-                {
-                    ApplicationArea = All;
-
-                }
-                field(Telugu; Telugu)
+                field(Telugu; Rec.Telugu)
                 {
                     ApplicationArea = All;
 
@@ -62,4 +40,6 @@ page 50137 TranslateByAPIPage
             }
         }
     }
+
+
 }
