@@ -34,8 +34,7 @@ codeunit 50138 TranslationByAPI
         Headers.Add('Ocp-Apim-Subscription-Region', 'westus2');
         Headers.Remove('Content-Type');
         Headers.Add('Content-Type', 'application/json');
-        // Headers.Add('Content-Length', '19');
-        // Request.GetHeaders(Headers);
+        //
         Request.Content(Content);
         MyHTTPClient.Send(Request, HTTPResponse);
         RecievedHTTPContent := HTTPResponse.Content;
@@ -76,10 +75,8 @@ codeunit 50138 TranslationByAPI
 
                 'ru':
                     begin
-                        temp := TranslateByAPITable.English;
                         TranslateByAPITable.Russian := TranslatedText;
                         Con := TranslateByAPITable.Count;
-
                     end;
                 'pa':
                     begin

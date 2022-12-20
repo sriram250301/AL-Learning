@@ -38,7 +38,4 @@ table 50136 TranslateByAPITable
             Clustered = true;
         }
     }
-
-
-
 }
